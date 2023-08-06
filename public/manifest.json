@@ -1,6 +1,6 @@
 {
-  "name":"React Login App",
-  "short_name": "React App",
+  "name":"Sahil's Login App",
+  "short_name": "Sahil's Login App",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
