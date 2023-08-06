@@ -11,7 +11,7 @@ function App() {
   return (
     <Fragment>
       <Routes>
-        <Route path='/' element={<Login />} />
+        <Route path='/*' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/authenticate/*' element={<Verify />} />
         <Route path='/forgot' element={<Forgot />} />
