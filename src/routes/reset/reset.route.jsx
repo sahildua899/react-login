@@ -24,7 +24,7 @@ const defaultFormValue = {
             alert('Passwords are not Same');
             return;
         }
-        await fetch('http://localhost:6004/api/users/newpass', {
+        await fetch('https://healthy-tan-perch.cyclic.app/api/users/newpass', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json'

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+
 
 const defaultFormValue ={
     firstname:'',
@@ -29,7 +31,7 @@ const Register = () => {
             alert('Passwords is not same');
             return;
         }
-        await fetch('http://localhost:6004/api/users/addNew', {
+        await fetch('https://healthy-tan-perch.cyclic.app/api/users/addNew', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -69,6 +71,7 @@ const Register = () => {
             <div className="btn-layer"></div>
             <input type="submit" value="Signup"/>
           </div>
+         <Link to={'/'}>Already Have an Account? Login Now</Link>
         </form>
       </div>
     </div>

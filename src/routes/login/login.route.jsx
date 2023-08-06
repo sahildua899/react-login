@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './login.styles.css'
+import { Link } from 'react-router-dom'
 
 const defaultFormValue = {
     email:'',
@@ -19,7 +20,7 @@ const defaultFormValue = {
 
     const handleSubmit = async(event) =>{
         event.preventDefault();
-        await fetch('http://localhost:6004/api/users/login', {
+        await fetch('https://healthy-tan-perch.cyclic.app/api/users/login', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -47,7 +48,10 @@ const defaultFormValue = {
             <div className="btn-layer"></div>
             <input type="submit" value="Login"/>
           </div>
+          <Link to={'/register'}>Create An Account</Link><br></br>
+          <Link to={'/forgot'}>Forgot Password</Link>
         </form>
+        
       </div>
     </div>
   </div>

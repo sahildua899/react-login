@@ -17,7 +17,7 @@ const defaultFormValue ={
 
    const handleSubmit = async(event)=>{
     event.preventDefault();
-    await fetch('http://localhost:6004/api/users/forgot', {
+    await fetch('https://healthy-tan-perch.cyclic.app/api/users/forgot', {
         method:'POST',
         headers:{
             'Content-Type':'application/json'

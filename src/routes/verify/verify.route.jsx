@@ -7,7 +7,7 @@ import React from 'react'
     
     const handleSubmit = async(event)=>{
         event.preventDefault();
-        await fetch('http://localhost:6004/api/users/authenticate', {
+        await fetch('https://healthy-tan-perch.cyclic.app/api/users/authenticate', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
